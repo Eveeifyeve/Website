@@ -1,2 +1,4 @@
 # Website
-Website For Eveeify 
+My Own Website 
+
+<img src="/public/EveeifyDivider.webp"> 

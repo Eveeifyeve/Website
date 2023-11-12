@@ -1,0 +1,13 @@
+---
+// Layout Properties
+const { Number, Message } = Astro.props.frontmatter || Astro.props;
+
+import '../style/style.css'
+---
+
+
+<div class="error">
+    <h1>{Number}</h1>
+    <p>{Message}</p>
+    <a href="/">Back to Home Page</a>
+</div>
