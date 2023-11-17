@@ -1,13 +1,34 @@
 ---
 import Layout from "../layout/layout.astro";
 import Header from "../components/header.astro";
-
+import AboutProfile from "../components/aboutProfile.astro";
+import WorkCard from "../components/workCard.astro";
 ---
 
 
 
 
-
+<Header/>
 <Layout>
-	<Header/>
+
+  <section id="About">
+    <AboutProfile/>
+  </section>
+  <br>
+
+
+  <section id="Work" class="flex flex-wrap items-center justify-center">
+    <h1 class="text-white w-full pb-8 mb-8 text-center">My Work</h1>
+    <WorkCard class="w-1/2"/>
+    <WorkCard class="w-1/2"/>
+  </section>
+
+  <section id="Story">
+    <!-- Story section content -->
+  </section>
+  <br>
+
+  <section id="Contact">
+    <!-- Contact section content -->
+  </section>
 </Layout>

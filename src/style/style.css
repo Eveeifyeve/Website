@@ -4,12 +4,20 @@
 
 
 
+
 body {
-    background: rgb(6,4,33);
-    background: linear-gradient(156deg, rgba(6,4,33,1) 0%, rgba(4,4,33,1) 50%, rgba(0,2,27,1) 100%); 
+    background: rgba(14, 14, 14, 0.999);
+    font-family: 'Inter', sans-serif;
 }
 
+#Work {
+    display: flex;
+    justify-content: center;
+}
 
+br {
+    clear: both;
+}
 
 
 
