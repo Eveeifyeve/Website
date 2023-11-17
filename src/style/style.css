@@ -6,8 +6,9 @@
 
 
 body {
-    background: rgba(14, 14, 14, 0.999);
+    background-color: rgba(14, 14, 14, 0.999);
     font-family: 'Inter', sans-serif;
+    background-size:cover;
 }
 
 #Work {
@@ -20,5 +21,10 @@ br {
 }
 
 
+@media (prefers-color-scheme: light) {
+}
+@media (prefers-color-scheme: dark) {
+
+}
 
 
