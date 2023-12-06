@@ -1,0 +1,6 @@
+{
+"features": {
+    "ghcr.io/prulloac/devcontainer-features/bun:latest": {
+    }
+  }
+} 
