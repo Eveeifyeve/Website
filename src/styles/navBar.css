@@ -1,0 +1,30 @@
+.menu {
+    display: flex;
+    justify-content: space-around;
+  }
+  
+  .menu-button {
+    display: none;
+  }
+  
+  .menu-content {
+    display: flex;
+  }
+  
+  .menu-content.show {
+    display: flex;
+  }
+  
+  @media (max-width: 768px) {
+    .menu-button {
+      display: block;
+    }
+  
+    .menu-content {
+      display: none;
+    }
+  
+    .menu-content.show {
+      display: flex;
+    }
+  }
