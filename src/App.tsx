@@ -1,20 +1,17 @@
-import * as NavigationMenu from '@radix-ui/react-navigation-menu';
+import { BrowserRouter as Router } from 'react-router-dom';
+import NavBar from './components/NavBar';
+import DiscordStatus from './components/profile';
+import Scrollbar from './components/scrollbar'; // import the Scrollbar component
 
-const navbar = () => (
-  <div className="bg-blue-500 p-4">
-    <NavigationMenu.Root orientation="horizontal" className="text-white flex">
-      <NavigationMenu.List>
-        <NavigationMenu.Item>
-          <NavigationMenu.Trigger className="hover:bg-blue-100 p-2 rounded">Item one</NavigationMenu.Trigger>
-          <NavigationMenu.Content>Item one content</NavigationMenu.Content>
-        </NavigationMenu.Item>
-        <NavigationMenu.Item>
-          <NavigationMenu.Trigger className="hover:bg-blue-700 p-2 rounded">Item two</NavigationMenu.Trigger>
-          <NavigationMenu.Content>Item Two content</NavigationMenu.Content>
-        </NavigationMenu.Item>
-      </NavigationMenu.List>
-    </NavigationMenu.Root>
-  </div>
-);
+function App() {
+  return (
+    <Router>
+      <DiscordStatus/>
+      <NavBar />
+      <Scrollbar /> {/* include the Scrollbar component */}
+      {/* other components */}
+    </Router>
+  );
+}
 
-export default navbar;
+export default App;
