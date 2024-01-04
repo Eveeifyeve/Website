@@ -11,7 +11,7 @@
 		"fmt:check": "prettier . --check",
 		"fmt": "prettier . --write",
 		"pages:dev": "vite build && wrangler pages dev --compatibility-date=2024-01-04 dist",
-		"pages:deploy": "vite build | wrangler pages deploy dist --production"
+		"pages:deploy": "vite build | wrangler pages deploy dist"
 	},
 	"dependencies": {
 		"@types/react-router-dom": "^5.3.3",
