@@ -131,11 +131,9 @@ const DiscordStatus = () => {
 						{activity?.[0] &&
 						typeof activity[0] === "object" &&
 						activity[0].name &&
-						(activity[0].name.toLowerCase().includes("code") ||
-							activity[0].name.toLowerCase().includes("neovim")) ? (
-							<span
-								className={`${activityNameColor} text-center`}
-							>{`${activity[0].state}`}</span>
+						(activity[0].name.includes("Code") ||
+							activity[0].name.includes("Neovim")) ? (
+							<span className={`${activityNameColor} text-center`}>Busy</span>
 						) : activity?.[0] &&
 						  typeof activity[0] === "object" &&
 						  activity[0].name === "Spotify" ? (
