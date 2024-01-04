@@ -1,0 +1,23 @@
+/* @tailwind base; */
+@tailwind components;
+@tailwind utilities;
+
+body {
+  background-color: rgba(14, 14, 14, 0.999);
+  font-family: "Inter", sans-serif;
+  background-size: cover;
+}
+
+#Work {
+  display: flex;
+  justify-content: center;
+}
+
+br {
+  clear: both;
+}
+
+@media (prefers-color-scheme: light) {
+}
+@media (prefers-color-scheme: dark) {
+}
