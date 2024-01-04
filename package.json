@@ -1,39 +1,42 @@
 {
-  "name": "my-vue-app",
-  "private": true,
-  "version": "0.0.0",
-  "type": "module",
-  "scripts": {
-    "dev": "vite",
-    "build": "tsc && vite build",
-    "lint": "eslint . --ext ts,tsx --report-unused-disable-directives --max-warnings 0",
-    "preview": "vite preview",
-    "fmt:check": "prettier . --check",
-    "fmt": "prettier . --write"
-  },
-  "dependencies": {
-    "@types/react-router-dom": "^5.3.3",
-    "autoprefixer": "^10.4.16",
-    "classnames": "^2.3.2",
-    "react": "^18.2.0",
-    "react-dom": "^18.2.0",
-    "react-gravatar": "^2.6.3",
-    "react-helmet-async": "^2.0.4",
-    "react-hot-toast": "^2.4.1",
-    "react-icons": "^4.12.0",
-    "react-router-dom": "^6.20.1",
-    "react-use-lanyard": "^0.3.0",
-    "smoothscroll-polyfill": "^0.4.4"
-  },
-  "devDependencies": {
-    "@biomejs/biome": "1.4.1",
-    "@types/node": "^20.10.4",
-    "@types/react": "^18.2.37",
-    "@types/react-dom": "^18.2.15",
-    "@vitejs/plugin-react": "^4.2.0",
-    "bun-types": "^1.0.15",
-    "tailwindcss": "^3.3.6",
-    "typescript": "^5.2.2",
-    "vite": "^5.0.0"
-  }
+	"name": "my-vue-app",
+	"private": true,
+	"version": "0.0.0",
+	"type": "module",
+	"scripts": {
+		"dev": "vite",
+		"build": "tsc && vite build",
+		"lint": "eslint . --ext ts,tsx --report-unused-disable-directives --max-warnings 0",
+		"preview": "vite preview",
+		"fmt:check": "prettier . --check",
+		"fmt": "prettier . --write",
+		"pages:dev": "wrangler pages dev --compatibility-date=2023-05-18 -- vite dev",
+		"pages:deploy": "vite build && wrangler pages deploy ./dist"
+	},
+	"dependencies": {
+		"@types/react-router-dom": "^5.3.3",
+		"autoprefixer": "^10.4.16",
+		"classnames": "^2.3.2",
+		"react": "^18.2.0",
+		"react-dom": "^18.2.0",
+		"react-gravatar": "^2.6.3",
+		"react-helmet-async": "^2.0.4",
+		"react-hot-toast": "^2.4.1",
+		"react-icons": "^4.12.0",
+		"react-router-dom": "^6.20.1",
+		"react-use-lanyard": "^0.3.0",
+		"smoothscroll-polyfill": "^0.4.4"
+	},
+	"devDependencies": {
+		"@biomejs/biome": "1.4.1",
+		"@types/node": "^20.10.4",
+		"@types/react": "^18.2.37",
+		"@types/react-dom": "^18.2.15",
+		"@vitejs/plugin-react": "^4.2.0",
+		"bun-types": "^1.0.15",
+		"tailwindcss": "^3.3.6",
+		"typescript": "^5.2.2",
+		"vite": "^5.0.0",
+		"wrangler": "^3.22.2"
+	}
 }
