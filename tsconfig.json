@@ -1,22 +1,3 @@
 {
-  "compilerOptions": {
-    "target": "ES2020",
-    "useDefineForClassFields": true,
-    "lib": ["DOM", "DOM.Iterable", "ScriptHost", "ES6"],
-    "module": "ESNext",
-    "skipLibCheck": true,
-    "types": ["bun-types", "node"],
-    "moduleResolution": "bundler",
-    "allowImportingTsExtensions": true,
-    "resolveJsonModule": true,
-    "isolatedModules": true,
-    "noEmit": true,
-    "jsx": "react-jsx",
-    "strict": true,
-    "noUnusedLocals": true,
-    "noUnusedParameters": true,
-    "noFallthroughCasesInSwitch": true
-  },
-  "include": ["/src/"],
-  "references": [{ "path": "./tsconfig.node.json" }]
+	"extends": "astro/tsconfigs/strict"
 }

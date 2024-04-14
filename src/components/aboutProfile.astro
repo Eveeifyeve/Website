@@ -1,5 +1,5 @@
 
-  <div class="left">
+  <div class="flex justify-center">
     <div class="heroAnnouncementOuter">
       <div class="heroAnnouncementGradient"></div>
       <div class="heroAnnouncement">
@@ -18,26 +18,9 @@
     <div class="right"></div>
 
   <style>
-    @import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap");
-
-    *,
-    :after,
-    :before {
-      box-sizing: border-box;
-    }
-
-
-    .left {
-      display: flex;
-      justify-content: center;
-    }
-
     /* The border for the about profile */
     .heroAnnouncementOuter {
-      position: relative;
-      min-width: 40%;
-      max-width: 1000px;
-      padding: 4px;
+      @apply relative min-w-[40%] max-w-[1000px] p-1;
       margin-top: 128px;
       overflow: hidden;
       background: linear-gradient(
