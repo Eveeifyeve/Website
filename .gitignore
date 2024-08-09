@@ -28,3 +28,9 @@ src/themes
 
 # ENvirioment Viables 
 .env
+
+
+# nix 
+.direnv
+.devenv
+yarn.lock
