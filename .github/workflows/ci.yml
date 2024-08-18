@@ -20,7 +20,7 @@ jobs:
               run: bun install
 
             - name: Building
-              run: bun build
+              run: bun run build
 
             - name: Deploying to Cloudflare Pages
               uses: cloudflare/pages-action@1
