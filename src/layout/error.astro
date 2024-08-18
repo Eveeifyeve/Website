@@ -2,9 +2,8 @@
 // Layout Properties
 const { Number, Message } = Astro.props.frontmatter || Astro.props;
 
-import '../style/style.css'
+import "../style/style.css";
 ---
-
 
 <div class="error">
     <h1 class="text">{Number}</h1>
@@ -14,8 +13,6 @@ import '../style/style.css'
 
 <style>
     .text {
-        color: white;
-        justify-content: center;
-        align-self: center;
+        @apply text-white justify-center items-center;
     }
 </style>
