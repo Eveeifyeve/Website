@@ -28,5 +28,4 @@ jobs:
                 apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
                 accountId: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
                 projectName: eveeifyeve
-                branch: main
                 directory: dist
