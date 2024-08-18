@@ -1,8 +1,14 @@
 ---
 import Meta from "../components/meta.astro";
-import "../style/style.css"
-
+import Nav from "../components/nav.astro";
 ---
-<Meta/>
-<slot/>
 
+<html lang="en">
+    <head>
+        <Meta />
+    </head>
+    <Nav />
+    <body class="text-white bg-[#0e0e0e] bg-cover">
+        <slot />
+    </body>
+</html>
