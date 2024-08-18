@@ -9,7 +9,7 @@
 		"preview": "astro preview",
 		"wrangler": "wrangler",
 		"deploy:preview": "bun run build && wrangler pages dev ./dist",
-		"deploy:publish": "bun run build && wrangler deploy ./dist",
+		"deploy:publish": "bun run build && wrangler pages deploy ./dist",
 		"astro": "astro"
 	},
 	"dependencies": {
