@@ -6,10 +6,9 @@
 		"dev": "astro dev",
 		"start": "astro dev",
 		"build": "astro check && astro build",
-		"preview": "astro preview",
+		"deploy:preview": "bun run build && wrangler pages dev",
+		"deploy": "bun run build && wrangler pages deploy",
 		"wrangler": "wrangler",
-		"deploy:preview": "bun run build && wrangler pages dev ./dist",
-		"deploy:publish": "bun run build && wrangler pages deploy ./dist",
 		"astro": "astro"
 	},
 	"dependencies": {
