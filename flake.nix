@@ -1,44 +1,27 @@
 {
   inputs = {
     nixpkgs.url = "github:NixOS/nixpkgs/nixos-unstable";
-    devenv.url = "github:cachix/devenv";
+    flake-parts.url = "github:hercules-ci/flake-parts";
   };
-  outputs =
-    inputs@{ flake-parts, nixpkgs, ... }:
-    flake-parts.lib.mkFlake { inherit inputs; } {
-      imports = [ inputs.devenv.flakeModule ];
+
+  outputs = inputs@{ self, nixpkgs, flake-parts, ... }:
+    flake-parts.lib.mkFlake {inherit inputs;} {
       systems = nixpkgs.lib.systems.flakeExposed;
-      perSystem =
+      perSystem = {
+        pkgs,
+        config,
+        lib,
+        ...
+      }: 
+      {
+        devShells.default = pkgs.mkShell
         {
-          config,
-          self',
-          inputs',
-          lib,
-          pkgs,
-          system,
-          ...
-        }:
-        {
-          devenv.shells.default = {
-            dotenv.enable = false;
-            packages =
-              with pkgs;
-              [ ]
-              ++ (with pkgs.nodePackages; [
-                vscode-langservers-extracted
-                typescript-language-server
-              ]);
-            languages = {
-              typescript.enable = true;
-              javascript = {
-                enable = true;
-                bun = {
-                  enable = true;
-                  install.enable = true;
-                };
-              };
-            };          
-          };
+          packages = with pkgs; [
+            bun
+						typescript
+						typescript-language-server
+          ];
         };
+      };
     };
 }
