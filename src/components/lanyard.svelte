@@ -1,29 +1,28 @@
 <script lang="ts">
-    import { useLanyard } from 'svelte-lanyard';
-    const data = useLanyard('639720838635061248');
+import { useLanyard } from "svelte-lanyard";
+const data = useLanyard("639720838635061248");
 
-    function statusColors(status: string, bg: boolean): string {
-    if (status === "online") {
-        return bg ? "bg-green-500" : "border-green-500";
-    }
+function statusColors(status: string, bg: boolean): string {
+	if (status === "online") {
+		return bg ? "bg-green-500" : "border-green-500";
+	}
 
-    if (status === "idle") {
-        return bg ? "bg-yellow-500" : "border-yellow-500";
-    }
+	if (status === "idle") {
+		return bg ? "bg-yellow-500" : "border-yellow-500";
+	}
 
-    if (status === "dnd") {
-        return bg ? "bg-red-500" : "border-red-500";
-    }
+	if (status === "dnd") {
+		return bg ? "bg-red-500" : "border-red-500";
+	}
 
-    if (status === "offline") {
-        return bg ? "bg-gray-500" : "border-gray-500";
-    }
+	if (status === "offline") {
+		return bg ? "bg-gray-500" : "border-gray-500";
+	}
 
-    return bg ? "bg-gray-500" : "border-gray-500";
-    };
+	return bg ? "bg-gray-500" : "border-gray-500";
+}
 
-    console.log(data);
-
+console.log(data);
 </script>
 
 <div class="flex flex-row items-center justify-center pt-8 pb-5">
