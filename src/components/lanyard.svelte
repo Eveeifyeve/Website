@@ -2,7 +2,7 @@
 import { useLanyard } from "svelte-lanyard";
 const data = useLanyard("639720838635061248");
 
-function statusColors(status: string, bg: boolean): string {
+function statusColors(status, bg) {
 	if (status === "online") {
 		return bg ? "bg-green-500" : "border-green-500";
 	}
