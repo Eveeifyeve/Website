@@ -17,7 +17,7 @@
         devShells.default = pkgs.mkShell
         {
           packages = with pkgs; [
-            bun
+            bun 
 						typescript
 						typescript-language-server
           ];
