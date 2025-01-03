@@ -3,10 +3,11 @@ import Meta from "../components/meta.astro";
 import Nav from "../components/nav.astro";
 ---
 
-<html lang="en" class="bg-[#151515] h-screen text-white">
+<html lang="en" class=" bg-white dark:bg-[#151515] h-screen text-white">
     <head>
         <Meta />
     </head>
     <Nav />
+		<div class="absolute inset-0 -z-10 h-full w-full bg-[radial-gradient(#2a2e2e_1px,transparent_1px)] bg-[size:14px_24px]"><div class="absolute left-0 right-0 bottom-10 -z-5 m-auto h-1/6 w-full rounded-full bg-cyan-900 opacity-60 blur-[150px]"></div></div>
     <slot />
 </html>
