@@ -1,0 +1,35 @@
+---
+import { twMerge } from "tailwind-merge";
+import Meta from "../components/meta.astro";
+import Nav from "../components/nav.astro";
+
+interface Props {
+  nav: boolean;
+  extraBackdropClass?: string;
+  extraDottedBackground?: string;
+}
+
+const { nav, extraBackdropClass, extraDottedBackground } = Astro.props;
+---
+
+<html lang="en" class="bg-[#151515] h-screen text-white">
+  <head>
+    <Meta />
+  </head>
+
+	<Nav enable={nav}/>
+
+  <div class={twMerge(
+    "absolute inset-0 -z-10 h-full w-full bg-[radial-gradient(#2a2e2e_1px,transparent_1px)] bg-[size:14px_24px]",
+    extraDottedBackground || ""
+  )}>
+    <div class={twMerge(
+      "absolute left-0 right-0 top-1/2 -z-5 m-auto h-1/6 w-full rounded-full bg-cyan-900 opacity-60 blur-[150px]",
+      extraBackdropClass || ""
+    )}
+    ></div>
+  </div>
+	<body class="w-screen h-screen">
+		<slot />
+	</body>
+</html>
