@@ -5,5 +5,5 @@ import svelte from "@astrojs/svelte";
 
 // https://astro.build/config
 export default defineConfig({
-	integrations: [tailwind({ applyBaseStyles: true }), svelte()],
+    integrations: [tailwind({ applyBaseStyles: true }), svelte()],
 });
