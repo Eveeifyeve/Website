@@ -1,10 +1,10 @@
 ---
 // Layout Properties
-const { Number, Message } = Astro.props.frontmatter || Astro.props;
+const { Errorcode, Message } = Astro.props.frontmatter || Astro.props;
 ---
 
 <div class="error">
-    <h1 class="text">{Number}</h1>
+    <h1 class="text">{Errorcode}</h1>
     <p class="text">{Message}</p>
     <a class="text" href="/">Back to Home Page</a>
 </div>
