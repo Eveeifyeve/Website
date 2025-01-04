@@ -30,7 +30,7 @@ console.log(data);
     <div class={`pl-2 flex flex-col items-center border ${statusColors($data.discord_status, true)} ${statusColors($data.discord_status, false)} lg:w-2/4 w-full p-1 bg-opacity-5 border-opacity-30 rounded-lg`}>
         <div class="flex flex-row w-full lg:pr-0 pr-1">
           	<img src={`https://cdn.discordapp.com/avatars/${$data.discord_user.id}/${$data.discord_user.avatar}.webp?size=1024`} alt="Avatar" class="w-[15%] lg:block hidden aspect-auto rounded-full" />
-            <p class="m-auto w-full">{$data.discord_status}</p> 
+            <p class="m-auto lg:text-center w-full">{$data.discord_status}</p> 
         </div>
         {#if $data.activities[0] && $data.activities[0].state !== ""}
         <div class="flex flex-col h-[10%] w-full justify-center items-center">
