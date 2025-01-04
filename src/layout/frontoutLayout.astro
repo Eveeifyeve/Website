@@ -12,11 +12,10 @@ interface Props {
 const { nav, extraBackdropClass, extraDottedBackground } = Astro.props;
 ---
 
-<html lang="en" class="bg-[#151515] h-screen text-white">
+<html lang="en" class="bg-[#151515] text-white">
   <head>
     <Meta />
   </head>
-
 	<Nav enable={nav}/>
 
   <div class={twMerge(
