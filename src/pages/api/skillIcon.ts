@@ -2,15 +2,11 @@ import json from "../../data/skills.json";
 
 export async function GET() {
 	try {
-		const response = json;
-		const skills: Set<string> = new Set();
-
-		Object.entries(response).forEach(([_, categoryData]) => {
-			Object.values(categoryData).forEach(item => {
-				const skillIcon = (item)?.skillIcon ?? '';
-				skills.add(skillIcon);
-			});
-		});
+		const skills: Array<string> = [];
+		json.languages.forEach(item => skills.push(item.skillIcon))
+		json.tools.forEach(item => skills.push(item.skillIcon))
+		json.database.forEach(item => skills.push(item.skillIcon))
+		json.other.forEach(item => skills.push(item.skillIcon))
 
 		const combinedSkills: string[] = Array.from(skills).sort();
 
