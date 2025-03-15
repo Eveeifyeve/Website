@@ -2,6 +2,7 @@
 import { twMerge } from "tailwind-merge";
 import Meta from "../components/meta.astro";
 import Nav from "../components/nav.astro";
+import WebsiteNoice from "../components/websiteNoice.astro";
 
 interface Props {
   nav: boolean;
@@ -13,7 +14,8 @@ const { nav, extraBackdropClass, extraDottedBackground } = Astro.props;
 ---
 
 <html lang="en" class="bg-[#151515] text-white">
-  <head>
+	<WebsiteNoice/>
+	<head>
     <Meta />
   </head>
 	<Nav enable={nav}/>

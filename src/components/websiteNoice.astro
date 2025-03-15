@@ -1,0 +1,19 @@
+<audio src="/websitebackground.mp3" id="audioElement" autoplay>
+</audio>
+<script>
+document.addEventListener('DOMContentLoaded', () => {
+    const audioElement = document.getElementById('audioElement') as HTMLAudioElement;
+    const audioContext = new (window.AudioContext || window.webkitAudioContext)();
+    const gainNode = audioContext.createGain();
+
+    gainNode.connect(audioContext.destination);
+
+    const mediaSource = audioContext.createMediaElementSource(audioElement);
+
+    mediaSource.connect(gainNode);
+
+    audioElement.loop = true;
+
+		setInterval(function () { audioElement.play()}, 1000)
+});
+</script>
