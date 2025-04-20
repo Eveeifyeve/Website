@@ -3,7 +3,7 @@
 <script>
 document.addEventListener('DOMContentLoaded', () => {
     const audioElement = document.getElementById('audioElement') as HTMLAudioElement;
-    const audioContext = new (window.AudioContext || window.webkitAudioContext)();
+    const audioContext = new (window.AudioContext)();
     const gainNode = audioContext.createGain();
 
     gainNode.connect(audioContext.destination);
