@@ -1,19 +1,15 @@
-<audio src="/websitebackground.mp3" id="audioElement" autoplay>
-</audio>
-<script>
-document.addEventListener('DOMContentLoaded', () => {
-    const audioElement = document.getElementById('audioElement') as HTMLAudioElement;
-    const audioContext = new (window.AudioContext)();
-    const gainNode = audioContext.createGain();
+<!-- Hidden Label -->
+<div 
+  id="audio-label" 
+  class="fixed text-xs font-thin right-3 bottom-3 bg-neutral-900 border border-cyan-300/30 py-2 px-3 rounded-full z-50 text-white"
+	>
+	Music by <a href="https://pixabay.com/users/delosound-46524562/?utm_source=link-attribution&utm_medium=referral&utm_campaign=music&utm_content=345374">DELOSound</a> from <a href="https://pixabay.com/music//?utm_source=link-attribution&utm_medium=referral&utm_campaign=music&utm_content=345374">Pixabay</a>
+</div>
 
-    gainNode.connect(audioContext.destination);
-
-    const mediaSource = audioContext.createMediaElementSource(audioElement);
-
-    mediaSource.connect(gainNode);
-
-    audioElement.loop = true;
-
-		setInterval(function () { audioElement.play()}, 1000)
-});
-</script>
+<!-- Hidden Iframe -->
+<div style="display: none;">
+  <audio autoplay controls loop preload="metadata">
+    <source src="/lofi-relax-lofi-345374.mp3" type="audio/mpeg">
+    Your browser doesn't support audio playback.
+  </audio>
+</div>
