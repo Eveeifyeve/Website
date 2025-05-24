@@ -1,43 +1,45 @@
 <script lang="ts">
-import { useLanyard } from "svelte-lanyard";
-const data = useLanyard("639720838635061248");
+	import { useLanyard } from "svelte-lanyard";
+	const data = useLanyard("639720838635061248");
 
-function statusColors(status: string, bg: boolean): string {
-	if (status === "online") {
-		return bg ? "bg-green-500" : "border-green-500";
+	function statusColors(status: string, bg: boolean): string {
+		switch (status) {
+			case "online":
+				return bg ? "bg-green-500" : "border-green-500";
+			case "idle":
+				return bg ? "bg-yellow-500" : "border-yellow-500";
+			case "dnd":
+				return bg ? "bg-red-500" : "border-red-500";
+			case "offline":
+			default:
+				return bg ? "bg-gray-500" : "border-gray-500";
+		}
 	}
-
-	if (status === "idle") {
-		return bg ? "bg-yellow-500" : "border-yellow-500";
-	}
-
-	if (status === "dnd") {
-		return bg ? "bg-red-500" : "border-red-500";
-	}
-
-	if (status === "offline") {
-		return bg ? "bg-gray-500" : "border-gray-500";
-	}
-
-	return bg ? "bg-gray-500" : "border-gray-500";
-}
-
-console.log(data);
 </script>
 
-<div class="absolute items-center top-0 left-3 mt-3">
-{#if $data && statusColors}
-    <div class={`pl-2 flex flex-col items-center border ${statusColors($data.discord_status, true)} ${statusColors($data.discord_status, false)} lg:w-2/4 w-full p-1 bg-opacity-5 border-opacity-30 rounded-lg`}>
-        <div class="flex flex-row w-full lg:pr-0 pr-1">
-          	<img src={`https://cdn.discordapp.com/avatars/${$data.discord_user.id}/${$data.discord_user.avatar}.webp?size=1024`} alt="Avatar" class="w-[15%] lg:block hidden aspect-auto rounded-full" />
-            <p class="m-auto lg:text-center w-full">{$data.discord_status}</p> 
-        </div>
-        {#if $data.activities[0] && $data.activities[0].state !== ""}
-        <div class="flex flex-col h-[10%] w-full justify-center items-center">
-            <p>{$data.activities[0].state}</p>
-            <p>{($data.activities[0].details || "No details")}</p>
-        </div>
-        {/if}
-    </div>
-{/if}
+<div class="absolute top-0 left-0 p-4">
+	{#if $data && statusColors}
+		<div
+			class={`flex items-center border ${statusColors($data.discord_status, true)} ${statusColors($data.discord_status, false)} bg-opacity-5 border-opacity-30 rounded-full p-2 max-w-md w-full`}
+		>
+			<!-- Avatar -->
+			{#if $data.discord_user.avatar}
+				<img
+					src={`https://cdn.discordapp.com/avatars/${$data.discord_user.id}/${$data.discord_user.avatar}.webp?size=1024`}
+					alt="Avatar"
+					class="w-10 h-10 mx-auto rounded-full"
+				/>
+			{/if}
+
+			<!-- Details pop out on the right -->
+			{#if $data.activities[0] && $data.activities[0].details}
+				<div class="ml-4 pl-6 pr-3 border-l border-white border-opacity-20 max-w-xs">
+					<p class="text-[10px] sm:text-sm text-neutral-200 truncate">
+						{$data.activities[0].details}
+					</p>
+				</div>
+			{/if}
+		</div>
+	{/if}
 </div>
+
