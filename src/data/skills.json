@@ -63,6 +63,12 @@
         {
             "skillName": "",
             "experience": "",
+            "skillIcon": "asm",
+            "color": ""
+        },
+        {
+            "skillName": "",
+            "experience": "",
             "skillIcon": "react",
             "color": ""
         },
