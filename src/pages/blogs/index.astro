@@ -1,0 +1,26 @@
+---
+import Layout from "../../layout/layout.astro";
+import { getCollection } from "astro:content";
+const blogitems = await getCollection("blog");
+---
+<Layout agreement={false}>
+  <div class="flex flex-col items-center px-6 py-5 md:px-10 lg:px-15 text-xl">
+    <h1 class="text-cyan-300 text-3xl text-center">
+      My Blogs
+    </h1>
+    <ul class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 w-full max-w-7xl mt-10 z-10">
+      {
+        blogitems.slice(0, 3).map((blog) => (
+          <li class="relative">
+            <a class="block" href={`/blogs/${blog.id}`}>
+							<div class="absolute top-4 left-4 bg-neutral-900/30 border border-cyan-200 px-6 py-2 rounded text-white text-sm">
+								<h1>{blog.data.title}</h1>
+								<p class="text-sm font-thin text-neutral-700 text-shadow-2xs text-shadow-cyan-700">{blog.data.desc}</p>
+                    </div>
+            </a>
+          </li>
+        ))
+      }
+    </ul>
+  </div>
+</Layout>
