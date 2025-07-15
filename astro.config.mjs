@@ -1,9 +1,18 @@
-import tailwind from "@astrojs/tailwind";
 import { defineConfig } from "astro/config";
 
 import svelte from "@astrojs/svelte";
 
+import tailwindcss from "@tailwindcss/vite";
+
 // https://astro.build/config
 export default defineConfig({
-	integrations: [tailwind({ applyBaseStyles: true }), svelte()],
+  integrations: [svelte()],
+
+  experimental: {
+      liveContentCollections: true,
+	},
+
+  vite: {
+    plugins: [tailwindcss()]
+  }
 });

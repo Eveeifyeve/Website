@@ -5,14 +5,14 @@
 	function statusColors(status: string, bg: boolean): string {
 		switch (status) {
 			case "online":
-				return bg ? "bg-green-500" : "border-green-500";
+				return bg ? "bg-green-500/5" : "border-green-500/30";
 			case "idle":
-				return bg ? "bg-yellow-500" : "border-yellow-500";
+				return bg ? "bg-yellow-500/5" : "border-yellow-500/30";
 			case "dnd":
-				return bg ? "bg-red-500" : "border-red-500";
+				return bg ? "bg-red-500/5" : "border-red-500/30";
 			case "offline":
 			default:
-				return bg ? "bg-gray-500" : "border-gray-500";
+				return bg ? "bg-gray-500/5" : "border-gray-500/30";
 		}
 	}
 </script>
@@ -20,7 +20,7 @@
 <div class="absolute top-0 left-0 p-4">
 	{#if $data && statusColors}
 		<div
-			class={`flex items-center border ${statusColors($data.discord_status, true)} ${statusColors($data.discord_status, false)} bg-opacity-5 border-opacity-30 rounded-full p-2 max-w-md w-full`}
+			class={`flex items-center border ${statusColors($data.discord_status, true)} ${statusColors($data.discord_status, false)} rounded-full p-2 max-w-md w-full`}
 		>
 			<!-- Avatar -->
 			{#if $data.discord_user.avatar}
