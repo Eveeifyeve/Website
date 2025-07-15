@@ -1,9 +1,20 @@
-import tailwind from "@astrojs/tailwind";
 import { defineConfig } from "astro/config";
 
 import svelte from "@astrojs/svelte";
 
+import tailwindcss from "@tailwindcss/vite";
+
+import mdx from "@astrojs/mdx";
+
 // https://astro.build/config
 export default defineConfig({
-	integrations: [tailwind({ applyBaseStyles: true }), svelte()],
+  integrations: [svelte(), mdx()],
+
+  experimental: {
+      liveContentCollections: true,
+    },
+
+  vite: {
+    plugins: [tailwindcss()]
+  }
 });

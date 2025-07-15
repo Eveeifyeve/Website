@@ -1,5 +1,6 @@
 ---
 // Layout Properties
+import "../styles/global.css";
 const { Errorcode, Message } = Astro.props.frontmatter || Astro.props;
 ---
 <body class="bg-[#151515] w-screen h-screen">
@@ -11,6 +12,7 @@ const { Errorcode, Message } = Astro.props.frontmatter || Astro.props;
 </div>
 </body>
 <style>
+	@reference "../styles/global.css"
     .text {
         @apply text-white justify-center items-center;
     }
