@@ -1,7 +1,7 @@
 ---
 import Layout from "../../layout/layout.astro";
 import { render } from "astro:content";
-import { getCollection, } from "astro:content";
+import { getCollection } from "astro:content";
 
 export async function getStaticPaths() {
 	const posts = await getCollection("blog");
@@ -15,11 +15,10 @@ const { Content } = await render(post);
 ---
 
 <Layout agreement={false}>
-<div class="mx-5 pt-[15%] w-full flex flex-col gap-6">
-		<h1 class="text-3xl font-bold text-center">{post.data.title}<h1>
-		<article class="flex-1 bg-neutral-950/50 prose-invert mx-auto prose md:prose-lg lg:prose-xl rounded-2xl p-4">
-						<Content />
+  <div class="mx-5 pt-[15%] w-full flex flex-col gap-6">
+    <h1 class="text-3xl font-bold text-center">{post.data.title}</h1>
+    <article class="flex-1 bg-neutral-950/50 prose-invert mx-auto prose md:prose-lg lg:prose-xl rounded-2xl p-4">
+      <Content />
     </article>
   </div>
 </Layout>
-

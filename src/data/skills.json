@@ -1,412 +1,412 @@
 {
-    "languages": [
-        {
-            "skillName": "",
-            "experience": "",
-            "skillIcon": "ts",
-            "color": ""
-        },
-        {
-            "skillName": "",
-            "experience": "",
-            "skillIcon": "js",
-            "color": ""
-        },
-        {
-            "skillName": "",
-            "experience": "",
-            "skillIcon": "html",
-            "color": ""
-        },
-        {
-            "skillName": "",
-            "experience": "",
-            "skillIcon": "css",
-            "color": ""
-        },
-        {
-            "skillName": "",
-            "experience": "",
-            "skillIcon": "sass",
-            "color": ""
-        },
-        {
-            "skillName": "",
-            "experience": "",
-            "skillIcon": "astro",
-            "color": ""
-        },
-        {
-            "skillName": "",
-            "experience": "",
-            "skillIcon": "svelte",
-            "color": ""
-        },
-        {
-            "skillName": "",
-            "experience": "",
-            "skillIcon": "swift",
-            "color": ""
-        },
-        {
-            "skillName": "",
-            "experience": "",
-            "skillIcon": "go",
-            "color": ""
-        },
-        {
-            "skillName": "",
-            "experience": "",
-            "skillIcon": "cpp",
-            "color": ""
-        },
-        {
-            "skillName": "",
-            "experience": "",
-            "skillIcon": "asm",
-            "color": ""
-        },
-        {
-            "skillName": "",
-            "experience": "",
-            "skillIcon": "react",
-            "color": ""
-        },
-        {
-            "skillName": "",
-            "experience": "",
-            "skillIcon": "kotlin",
-            "color": ""
-        },
-        {
-            "skillName": "",
-            "experience": "",
-            "skillIcon": "lua",
-            "color": ""
-        },
-        {
-            "skillName": "",
-            "experience": "",
-            "skillIcon": "rust",
-            "color": ""
-        },
-        {
-            "skillName": "",
-            "experience": "",
-            "skillIcon": "zig",
-            "color": ""
-        },
-        {
-            "skillName": "",
-            "experience": "",
-            "skillIcon": "vue",
-            "color": ""
-        },
-        {
-            "skillName": "",
-            "experience": "",
-            "skillIcon": "java",
-            "color": ""
-        },
-        {
-            "skillName": "",
-            "experience": "",
-            "skillIcon": "svg",
-            "color": ""
-        },
-        {
-            "skillName": "",
-            "experience": "",
-            "skillIcon": "nix",
-            "color": ""
-        },
-        {
-            "skillName": "",
-            "experience": "",
-            "skillIcon": "gleam",
-            "color": ""
-        },
-        {
-            "skillName": "",
-            "experience": "",
-            "skillIcon": "python",
-            "color": ""
-        },
-        {
-            "skillName": "",
-            "experience": "",
-            "skillIcon": "bash",
-            "color": ""
-        },
-        {
-            "skillName": "",
-            "experience": "",
-            "skillIcon": "dart",
-            "color": ""
-        }
-    ],
-    "tools": [
-        {
-            "skillName": "",
-            "experience": "",
-            "skillIcon": "maven",
-            "color": ""
-        },
-        {
-            "skillName": "",
-            "experience": "",
-            "skillIcon": "gradle",
-            "color": ""
-        },
-        {
-            "skillName": "",
-            "experience": "",
-            "skillIcon": "bootstrap",
-            "color": ""
-        },
-        {
-            "skillName": "",
-            "experience": "",
-            "skillIcon": "godot",
-            "color": ""
-        },
-        {
-            "skillName": "",
-            "experience": "",
-            "skillIcon": "nextjs",
-            "color": ""
-        },
-        {
-            "skillName": "",
-            "experience": "",
-            "skillIcon": "supabase",
-            "color": ""
-        },
-        {
-            "skillName": "",
-            "experience": "",
-            "skillIcon": "replit",
-            "color": ""
-        },
-        {
-            "skillName": "",
-            "experience": "",
-            "skillIcon": "tailwind",
-            "color": ""
-        },
-        {
-            "skillName": "",
-            "experience": "",
-            "skillIcon": "tauri",
-            "color": ""
-        },
-        {
-            "skillName": "",
-            "experience": "",
-            "skillIcon": "electron",
-            "color": ""
-        },
-        {
-            "skillName": "",
-            "experience": "",
-            "skillIcon": "vercel",
-            "color": ""
-        },
-        {
-            "skillName": "",
-            "experience": "",
-            "skillIcon": "vite",
-            "color": ""
-        },
-        {
-            "skillName": "",
-            "experience": "",
-            "skillIcon": "webpack",
-            "color": ""
-        },
-        {
-            "skillName": "",
-            "experience": "",
-            "skillIcon": "prisma",
-            "color": ""
-        },
-        {
-            "skillName": "",
-            "experience": "",
-            "skillIcon": "gatsby",
-            "color": ""
-        },
-        {
-            "skillName": "",
-            "experience": "",
-            "skillIcon": "nginx",
-            "color": ""
-        },
-        {
-            "skillName": "",
-            "experience": "",
-            "skillIcon": "nodejs",
-            "color": ""
-        },
-        {
-            "skillName": "",
-            "experience": "",
-            "skillIcon": "cmake",
-            "color": ""
-        },
-        {
-            "skillName": "",
-            "experience": "",
-            "skillIcon": "githubactions",
-            "color": ""
-        },
-        {
-            "skillName": "",
-            "experience": "",
-            "skillIcon": "flutter",
-            "color": ""
-        },
-        {
-            "skillName": "",
-            "experience": "",
-            "skillIcon": "jquery",
-            "color": ""
-        },
-        {
-            "skillName": "",
-            "experience": "",
-            "skillIcon": "angular",
-            "color": ""
-        },
-        {
-            "skillName": "",
-            "experience": "",
-            "skillIcon": "solidjs",
-            "color": ""
-        },
-        {
-            "skillName": "",
-            "experience": "",
-            "skillIcon": "bun",
-            "color": ""
-        },
-        {
-            "skillName": "",
-            "experience": "",
-            "skillIcon": "discordjs",
-            "color": ""
-        }
-    ],
-    "database": [
-        {
-            "skillName": "",
-            "experience": "",
-            "skillIcon": "mongodb",
-            "color": ""
-        },
-        {
-            "skillName": "",
-            "experience": "",
-            "skillIcon": "sqlite",
-            "color": ""
-        },
-        {
-            "skillName": "",
-            "experience": "",
-            "skillIcon": "postgresql",
-            "color": ""
-        },
-        {
-            "skillName": "",
-            "experience": "",
-            "skillIcon": "surrealdb",
-            "color": ""
-        }
-    ],
-    "other": [
-        {
-            "skillName": "",
-            "experience": "",
-            "skillIcon": "vim",
-            "color": ""
-        },
-        {
-            "skillName": "",
-            "experience": "",
-            "skillIcon": "neovim",
-            "color": ""
-        },
-        {
-            "skillName": "",
-            "experience": "",
-            "skillIcon": "idea",
-            "color": ""
-        },
-        {
-            "skillName": "",
-            "experience": "",
-            "skillIcon": "vscode",
-            "color": ""
-        },
-        {
-            "skillName": "",
-            "experience": "",
-            "skillIcon": "docker",
-            "color": ""
-        },
-        {
-            "skillName": "",
-            "experience": "",
-            "skillIcon": "postman",
-            "color": ""
-        },
-        {
-            "skillName": "",
-            "experience": "",
-            "skillIcon": "github",
-            "color": ""
-        },
-        {
-            "skillName": "",
-            "experience": "",
-            "skillIcon": "gimp",
-            "color": ""
-        },
-        {
-            "skillName": "",
-            "experience": "",
-            "skillIcon": "pr",
-            "color": ""
-        },
-        {
-            "skillName": "",
-            "experience": "",
-            "skillIcon": "davinci",
-            "color": ""
-        },
-        {
-            "skillName": "",
-            "experience": "",
-            "skillIcon": "arcbrowser",
-            "color": ""
-        },
-        {
-            "skillName": "",
-            "experience": "",
-            "skillIcon": "zen",
-            "color": ""
-        },
-        {
-            "skillName": "",
-            "experience": "",
-            "skillIcon": "firefox",
-            "color": ""
-        },
-        {
-            "skillName": "",
-            "experience": "",
-            "skillIcon": "chrome",
-            "color": ""
-        }
-    ]
+	"languages": [
+		{
+			"skillName": "",
+			"experience": "",
+			"skillIcon": "ts",
+			"color": ""
+		},
+		{
+			"skillName": "",
+			"experience": "",
+			"skillIcon": "js",
+			"color": ""
+		},
+		{
+			"skillName": "",
+			"experience": "",
+			"skillIcon": "html",
+			"color": ""
+		},
+		{
+			"skillName": "",
+			"experience": "",
+			"skillIcon": "css",
+			"color": ""
+		},
+		{
+			"skillName": "",
+			"experience": "",
+			"skillIcon": "sass",
+			"color": ""
+		},
+		{
+			"skillName": "",
+			"experience": "",
+			"skillIcon": "astro",
+			"color": ""
+		},
+		{
+			"skillName": "",
+			"experience": "",
+			"skillIcon": "svelte",
+			"color": ""
+		},
+		{
+			"skillName": "",
+			"experience": "",
+			"skillIcon": "swift",
+			"color": ""
+		},
+		{
+			"skillName": "",
+			"experience": "",
+			"skillIcon": "go",
+			"color": ""
+		},
+		{
+			"skillName": "",
+			"experience": "",
+			"skillIcon": "cpp",
+			"color": ""
+		},
+		{
+			"skillName": "",
+			"experience": "",
+			"skillIcon": "asm",
+			"color": ""
+		},
+		{
+			"skillName": "",
+			"experience": "",
+			"skillIcon": "react",
+			"color": ""
+		},
+		{
+			"skillName": "",
+			"experience": "",
+			"skillIcon": "kotlin",
+			"color": ""
+		},
+		{
+			"skillName": "",
+			"experience": "",
+			"skillIcon": "lua",
+			"color": ""
+		},
+		{
+			"skillName": "",
+			"experience": "",
+			"skillIcon": "rust",
+			"color": ""
+		},
+		{
+			"skillName": "",
+			"experience": "",
+			"skillIcon": "zig",
+			"color": ""
+		},
+		{
+			"skillName": "",
+			"experience": "",
+			"skillIcon": "vue",
+			"color": ""
+		},
+		{
+			"skillName": "",
+			"experience": "",
+			"skillIcon": "java",
+			"color": ""
+		},
+		{
+			"skillName": "",
+			"experience": "",
+			"skillIcon": "svg",
+			"color": ""
+		},
+		{
+			"skillName": "",
+			"experience": "",
+			"skillIcon": "nix",
+			"color": ""
+		},
+		{
+			"skillName": "",
+			"experience": "",
+			"skillIcon": "gleam",
+			"color": ""
+		},
+		{
+			"skillName": "",
+			"experience": "",
+			"skillIcon": "python",
+			"color": ""
+		},
+		{
+			"skillName": "",
+			"experience": "",
+			"skillIcon": "bash",
+			"color": ""
+		},
+		{
+			"skillName": "",
+			"experience": "",
+			"skillIcon": "dart",
+			"color": ""
+		}
+	],
+	"tools": [
+		{
+			"skillName": "",
+			"experience": "",
+			"skillIcon": "maven",
+			"color": ""
+		},
+		{
+			"skillName": "",
+			"experience": "",
+			"skillIcon": "gradle",
+			"color": ""
+		},
+		{
+			"skillName": "",
+			"experience": "",
+			"skillIcon": "bootstrap",
+			"color": ""
+		},
+		{
+			"skillName": "",
+			"experience": "",
+			"skillIcon": "godot",
+			"color": ""
+		},
+		{
+			"skillName": "",
+			"experience": "",
+			"skillIcon": "nextjs",
+			"color": ""
+		},
+		{
+			"skillName": "",
+			"experience": "",
+			"skillIcon": "supabase",
+			"color": ""
+		},
+		{
+			"skillName": "",
+			"experience": "",
+			"skillIcon": "replit",
+			"color": ""
+		},
+		{
+			"skillName": "",
+			"experience": "",
+			"skillIcon": "tailwind",
+			"color": ""
+		},
+		{
+			"skillName": "",
+			"experience": "",
+			"skillIcon": "tauri",
+			"color": ""
+		},
+		{
+			"skillName": "",
+			"experience": "",
+			"skillIcon": "electron",
+			"color": ""
+		},
+		{
+			"skillName": "",
+			"experience": "",
+			"skillIcon": "vercel",
+			"color": ""
+		},
+		{
+			"skillName": "",
+			"experience": "",
+			"skillIcon": "vite",
+			"color": ""
+		},
+		{
+			"skillName": "",
+			"experience": "",
+			"skillIcon": "webpack",
+			"color": ""
+		},
+		{
+			"skillName": "",
+			"experience": "",
+			"skillIcon": "prisma",
+			"color": ""
+		},
+		{
+			"skillName": "",
+			"experience": "",
+			"skillIcon": "gatsby",
+			"color": ""
+		},
+		{
+			"skillName": "",
+			"experience": "",
+			"skillIcon": "nginx",
+			"color": ""
+		},
+		{
+			"skillName": "",
+			"experience": "",
+			"skillIcon": "nodejs",
+			"color": ""
+		},
+		{
+			"skillName": "",
+			"experience": "",
+			"skillIcon": "cmake",
+			"color": ""
+		},
+		{
+			"skillName": "",
+			"experience": "",
+			"skillIcon": "githubactions",
+			"color": ""
+		},
+		{
+			"skillName": "",
+			"experience": "",
+			"skillIcon": "flutter",
+			"color": ""
+		},
+		{
+			"skillName": "",
+			"experience": "",
+			"skillIcon": "jquery",
+			"color": ""
+		},
+		{
+			"skillName": "",
+			"experience": "",
+			"skillIcon": "angular",
+			"color": ""
+		},
+		{
+			"skillName": "",
+			"experience": "",
+			"skillIcon": "solidjs",
+			"color": ""
+		},
+		{
+			"skillName": "",
+			"experience": "",
+			"skillIcon": "bun",
+			"color": ""
+		},
+		{
+			"skillName": "",
+			"experience": "",
+			"skillIcon": "discordjs",
+			"color": ""
+		}
+	],
+	"database": [
+		{
+			"skillName": "",
+			"experience": "",
+			"skillIcon": "mongodb",
+			"color": ""
+		},
+		{
+			"skillName": "",
+			"experience": "",
+			"skillIcon": "sqlite",
+			"color": ""
+		},
+		{
+			"skillName": "",
+			"experience": "",
+			"skillIcon": "postgresql",
+			"color": ""
+		},
+		{
+			"skillName": "",
+			"experience": "",
+			"skillIcon": "surrealdb",
+			"color": ""
+		}
+	],
+	"other": [
+		{
+			"skillName": "",
+			"experience": "",
+			"skillIcon": "vim",
+			"color": ""
+		},
+		{
+			"skillName": "",
+			"experience": "",
+			"skillIcon": "neovim",
+			"color": ""
+		},
+		{
+			"skillName": "",
+			"experience": "",
+			"skillIcon": "idea",
+			"color": ""
+		},
+		{
+			"skillName": "",
+			"experience": "",
+			"skillIcon": "vscode",
+			"color": ""
+		},
+		{
+			"skillName": "",
+			"experience": "",
+			"skillIcon": "docker",
+			"color": ""
+		},
+		{
+			"skillName": "",
+			"experience": "",
+			"skillIcon": "postman",
+			"color": ""
+		},
+		{
+			"skillName": "",
+			"experience": "",
+			"skillIcon": "github",
+			"color": ""
+		},
+		{
+			"skillName": "",
+			"experience": "",
+			"skillIcon": "gimp",
+			"color": ""
+		},
+		{
+			"skillName": "",
+			"experience": "",
+			"skillIcon": "pr",
+			"color": ""
+		},
+		{
+			"skillName": "",
+			"experience": "",
+			"skillIcon": "davinci",
+			"color": ""
+		},
+		{
+			"skillName": "",
+			"experience": "",
+			"skillIcon": "arcbrowser",
+			"color": ""
+		},
+		{
+			"skillName": "",
+			"experience": "",
+			"skillIcon": "zen",
+			"color": ""
+		},
+		{
+			"skillName": "",
+			"experience": "",
+			"skillIcon": "firefox",
+			"color": ""
+		},
+		{
+			"skillName": "",
+			"experience": "",
+			"skillIcon": "chrome",
+			"color": ""
+		}
+	]
 }

@@ -1,0 +1,32 @@
+---
+title: WHY IS CARGO CHECK SO SLOWWWWWWW! 
+desc: This blog explains why.
+pubDate: 2025-08-09
+---
+
+You are probably asking what is the issue with `cargo check` being slow and wouldn't that be mostly type checking and borrowing???? 
+Yes summary it is, if you want stop here bye. If you want to be curious of the specifics continue reading.
+
+# Testing `cargo check` on big projects.
+
+I was discussed that `cargo check` was so slow by [@wildwestrom](https://github.com/wildwestrom) & [@jakubDoka](https://github.com/jakubDoka).
+I want to investigate to the root causes of why it's slow so I closed an [example from wildwestom](https://github.com/wildwestrom/track-geometry-experiments) and got started.
+
+# Getting a flame graph prepared
+
+I did the basics setup `measureme` and get a basic flake graph locally:
+
+![framegraph](/blog/cargo-check-flame.svg)
+- [Link here](/blog/cargo-check-flame.svg)
+
+It turns out huh why is analysis taking so long, well it has serveral other components under the hood type_check_crate, etc.
+But as soon as I got down to the nity-grity it turns out that under coherent_trait impl_trait_header was taking the longest.
+It got down to [metadata_decode_entry_impl_trait_header](https://github.com/rust-lang/rust/blob/master/compiler/rustc_metadata/src/rmeta/decoder/cstore_impl.rs) which is for proc macros I thought this is why `cargo check is slow`.
+
+
+# Summary 
+- Proc macros are the cause of `cargo check` being slow.
+- Specifically `metadata_decode_entry_impl_trait_header` is slow.
+- And finally it can be fixed.
+
+I hope you have a great understanding of why `cargo check`` is so SLOWWWWW! STOP USING PROC MACROS.

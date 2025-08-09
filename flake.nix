@@ -18,7 +18,7 @@
         {
           packages = with pkgs; [
             bun
-						biome
+						dprint
 						typescript
 						typescript-language-server
           ];

@@ -1,31 +1,34 @@
 name: CI
 
-on: 
-    push:
-    pull_request:
-    workflow_dispatch:
+on:
+  push:
+  pull_request:
+  workflow_dispatch:
+
+permissions:
+  actions: write
 
 jobs:
-    deploy: 
-        runs-on: ubuntu-latest
-        if: github.ref_name == 'master'
-        steps:
-            - uses: actions/checkout@v4
-            - name: Setup Bun
-              uses: oven-sh/setup-bun@v2
-              with:
-                bun-version: latest
-            
-            - name: Install Dependencies
-              run: bun install
+  deploy:
+    runs-on: ubuntu-latest
+    if: github.ref_name == 'master'
+    steps:
+      - uses: actions/checkout@v4
+      - name: Setup Bun
+        uses: oven-sh/setup-bun@v2
+        with:
+          bun-version: latest
 
-            - name: Building
-              run: bun run build
+      - name: Install Dependencies
+        run: bun install
 
-            - name: Deploying to Cloudflare Pages
-              uses: cloudflare/pages-action@1
-              with: 
-                apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
-                accountId: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
-                projectName: eveeifyeve
-                directory: dist
+      - name: Building
+        run: bun run build
+
+      - name: Deploying to Cloudflare Pages
+        uses: cloudflare/pages-action@1
+        with:
+          apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+          accountId: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+          projectName: eveeifyeve
+          directory: dist

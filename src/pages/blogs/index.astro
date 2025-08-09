@@ -13,10 +13,12 @@ const blogitems = await getCollection("blog");
         blogitems.slice(0, 3).map((blog) => (
           <li class="relative">
             <a class="block" href={`/blogs/${blog.id}`}>
-							<div class="absolute top-4 left-4 bg-neutral-900/30 border border-cyan-200 px-6 py-2 rounded text-white text-sm">
-								<h1>{blog.data.title}</h1>
-								<p class="text-sm font-thin text-neutral-700 text-shadow-2xs text-shadow-cyan-700">{blog.data.desc}</p>
-                    </div>
+              <div class="absolute top-4 left-4 bg-neutral-900/30 border border-cyan-200 px-6 py-2 rounded text-white text-sm">
+                <h1>{blog.data.title}</h1>
+                <p class="text-sm font-thin text-neutral-700 text-shadow-2xs text-shadow-cyan-700">
+                  {blog.data.desc}
+                </p>
+              </div>
             </a>
           </li>
         ))
