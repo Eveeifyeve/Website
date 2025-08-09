@@ -1,4 +1,6 @@
-<!-- Hidden Label -->
+---
+import { FileAudio2 } from 'lucide-astro'
+---
 <div
   id="audio-label"
   class="fixed text-xs font-thin right-3 bottom-3 bg-neutral-900 border border-cyan-300/30 py-2 px-3 rounded-full z-50 text-white"
@@ -8,9 +10,61 @@
   >DELOSound</a> from <a
     href="https://pixabay.com/music//?utm_source=link-attribution&utm_medium=referral&utm_campaign=music&utm_content=345374"
   >Pixabay</a>
+
+  <!-- Mute button -->
+  <button
+    id="mute-button"
+    aria-label="Mute/unmute audio"
+		class="absolute bottom-full mb-2 left-1/2 transform -translate-x-1/2 p-1 bg-cyan-900/30 rounded-full text-white opacity-0 pointer-events-none transition-opacity duration-300"
+    title="Mute/Unmute"
+  >
+		<FileAudio2 />
+  </button>
 </div>
 
-<!-- Hidden Iframe -->
+<!-- Hidden audio -->
 <div style="display: none;">
-  <audio src="/lofi-relax-lofi-345374.mp3" autoplay loop preload="metadata" />
+  <audio src="/lofi-relax-lofi-345374.mp3" autoplay id="music" loop preload="metadata"></audio>
 </div>
+
+<script is:inline>
+  const audioLabel = document.getElementById('audio-label');
+  const muteButton = document.getElementById('mute-button');
+  const audio = document.getElementById('music');
+
+	let hideTimeout;
+
+	const savedMuteState = localStorage.getItem('audioMuted');
+  if (savedMuteState === 'true') {
+    audio.muted = true;
+    muteButton.title = 'Unmute';
+  } else {
+    audio.muted = false;
+    muteButton.title = 'Mute';
+  }
+
+
+  // Show button
+  function showMuteButton() {
+    clearTimeout(hideTimeout);
+    muteButton.classList.remove('opacity-0', 'pointer-events-none');
+  }
+
+  // Hide button with delay
+  function hideMuteButton() {
+    hideTimeout = setTimeout(() => {
+      muteButton.classList.add('opacity-0', 'pointer-events-none');
+    }, 2000);
+  }
+
+  audioLabel.addEventListener('mouseenter', showMuteButton);
+  audioLabel.addEventListener('mouseleave', hideMuteButton);
+
+  muteButton.addEventListener('click', () => {
+    audio.muted = !audio.muted;
+		muteButton.title = audio.muted ? 'Unmute' : 'Mute';
+
+		localStorage.setItem('audioMuted', audio.muted);
+  });
+</script>
+
