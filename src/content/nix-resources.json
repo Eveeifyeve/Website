@@ -10,6 +10,11 @@
 		"key": "no"
 	},
 	{
+		"name": "Nixpkgs",
+		"url": "https://search.nixos.org/packages?channel=unstable",
+		"key": "np"
+	},
+	{
 		"name": "Home Manager Options",
 		"url": "https://nix-community.github.io/home-manager/options.xhtml",
 		"key": "hm"
@@ -33,6 +38,16 @@
 		"name": "Nixpkgs Manual",
 		"url": "https://nixos.org/manual/nixpkgs/unstable",
 		"key": "npm"
+	},
+	{
+		"name": "Noogle",
+		"url": "https://noogle.dev",
+		"key": "noo"
+	},
+	{
+		"name": "Nixpkgs Pull Request Tracker",
+		"url": "https://nixpk.gs",
+		"key": "npr"
 	},
 	{
 		"name": "Nix Manual",
