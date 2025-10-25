@@ -1,0 +1,13 @@
+---
+import Layout from "../layout/layout.astro";
+import Nix_resources from "../components/nix_resources";
+import { getCollection } from "astro:content";
+
+const allResources = await getCollection("nix-resources");
+const formattedResources = allResources.map(r => r.data);
+---
+
+<Layout>
+  <Nix_resources client:load resources={formattedResources} />
+</Layout>
+

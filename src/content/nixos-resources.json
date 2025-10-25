@@ -1,0 +1,89 @@
+[
+	{
+		"name": "Main Website",
+		"url": "https://nixos.org/",
+		"key": "mw"
+	},
+	{
+		"name": "NixOS Options",
+		"url": "https://search.nixos.org/options?channel=unstable",
+		"key": "no"
+	},
+	{
+		"name": "Home Manager Options",
+		"url": "https://nix-community.github.io/home-manager/options.xhtml",
+		"key": "hm"
+	},
+	{
+		"name": "Nix-darwin Reference (darwin)",
+		"url": "https://nix-darwin.github.io/nix-darwin/manual/index.html",
+		"key": "nd"
+	},
+	{
+		"name": "NixOS Wiki",
+		"url": "https://wiki.nixos.org/",
+		"key": "nw"
+	},
+	{
+		"name": "NixOS Manual",
+		"url": "https://nixos.org/manual/nixos/unstable",
+		"key": "nm"
+	},
+	{
+		"name": "Nixpkgs Manual",
+		"url": "https://nixos.org/manual/nixpkgs/unstable",
+		"key": "npm"
+	},
+	{
+		"name": "Nix Manual",
+		"url": "https://nix.dev/manual/nix/unstable",
+		"key": "nix"
+	},
+	{
+		"name": "NixOps",
+		"url": "https://nixos.org/nixops",
+		"key": "ops"
+	},
+	{
+		"name": "Stylix (System-wide Theme)",
+		"url": "https://github.com/nix-community/stylix",
+		"key": "sx",
+		"other": true
+	},
+	{
+		"name": "Full Time Nix Podcast",
+		"url": "https://fulltimenix.com/",
+		"key": "ftn",
+		"other": true
+	},
+	{
+		"name": "Flake Parts Framework",
+		"url": "https://flake.parts/",
+		"key": "fp",
+		"other": true
+	},
+	{
+		"name": "NixOS Anywhere (Remote Install)",
+		"url": "https://github.com/nix-community/nixos-anywhere",
+		"key": "na",
+		"other": true
+	},
+	{
+		"name": "Disko (Declarative Partitioning)",
+		"url": "https://github.com/nix-community/disko",
+		"key": "dk",
+		"other": true
+	},
+	{
+		"name": "System Manager (Nix with linux distros)",
+		"url": "https://github.com/numtide/system-manager",
+		"key": "sm",
+		"other": true
+	},
+	{
+		"name": "nh (Nicer Builds & Features)",
+		"url": "https://github.com/nix-community/nh",
+		"key": "nh",
+		"other": true
+	}
+]
