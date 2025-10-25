@@ -36,7 +36,7 @@ const positions = defineCollection({
 });
 
 const nixResourcesCollection = defineCollection({
-	loader: file("src/content/nixos-resources.json", {
+	loader: file("src/content/nix-resources.json", {
 		parser: (text: string): NixResource[] =>
 			JSON.parse(text).map((e: NixResource, i: number) => ({
 				...e,
