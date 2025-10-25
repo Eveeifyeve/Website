@@ -1,0 +1,20 @@
+[
+	{
+		"name": "Chief Executive Officer",
+		"business": "DigitalBrewStudios",
+		"current": true,
+		"start-date": "08-2025"
+	},
+	{
+		"name": "Senior Software Engineer",
+		"business": "OpusClient",
+		"current": true,
+		"start-date": "08-2023"
+	},
+	{
+		"name": "Senior Software Developer",
+		"business": "NodeForge",
+		"end-date": "07-2025",
+		"start-date": "12-2024"
+	}
+]

@@ -17,6 +17,23 @@ const blog = defineCollection({
 	}),
 });
 
+const positions = defineCollection({
+	loader: file("src/content/roles.json", {
+		parser: (text: string): NixResource[] =>
+			JSON.parse(text).map((e: NixResource, i: number) => ({
+				...e,
+				id: `${i}`,
+			})),
+	}),
+	schema: z.object({
+		name: z.string(),
+		business: z.string(),
+		current: z.boolean().optional(),
+		"start-date": z.string(),
+		"end-date": z.string().optional()
+	}),
+});
+
 const nixResourcesCollection = defineCollection({
 	loader: file("src/content/nixos-resources.json", {
 		parser: (text: string): NixResource[] =>
@@ -34,4 +51,8 @@ const nixResourcesCollection = defineCollection({
 	}),
 });
 
-export const collections = { blog, "nix-resources": nixResourcesCollection };
+export const collections = {
+	blog,
+	"nix-resources": nixResourcesCollection,
+	careers: positions
+};
