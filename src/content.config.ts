@@ -30,7 +30,8 @@ const positions = defineCollection({
 		business: z.string(),
 		current: z.boolean().optional(),
 		"start-date": z.string(),
-		"end-date": z.string().optional()
+		"end-date": z.string().optional(),
+		website: z.string().optional()
 	}),
 });
 

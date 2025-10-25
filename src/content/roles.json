@@ -3,7 +3,8 @@
 		"name": "Chief Executive Officer",
 		"business": "DigitalBrewStudios",
 		"current": true,
-		"start-date": "08-2025"
+		"start-date": "08-2025",
+		"website": "https://digitalbrewstudios.com"
 	},
 	{
 		"name": "Senior Software Engineer",

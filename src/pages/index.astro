@@ -1,7 +1,11 @@
 ---
-import Box from "../components/box.astro";
+import { getCollection } from "astro:content";
 import Lanyard from "../components/lanyard.svelte";
 import Layout from "../layout/layout.astro";
+
+const roles = await getCollection("careers");
+
+const currentRoles = roles.filter(role => role.data.current);
 ---
 
 <Layout>
@@ -12,13 +16,18 @@ import Layout from "../layout/layout.astro";
       I specialize in fullstack web development and Minecraft modpack
       development.
       <br />
-      I'm currently work as Developer at <a class="text-blue-400" href="/404"
-      >Opus Client</a> & CTO at <a
-        class="text-blue-400"
-        href="/404"
-        target="_blank"
-        rel="noopener noreferrer"
-      >NodeForge Hosting</a>
+      I'm currently working at{" "}
+			{currentRoles.map((role, i) => (
+        <>
+          <a
+            class="text-blue-400"
+						href={role.data.website ?? "/404"}
+          >
+            {role.data.business}
+          </a>
+          {i < currentRoles.length - 1 ? " & " : ""}
+        </>
+      ))}
     </p>
   </div>
 </Layout>
