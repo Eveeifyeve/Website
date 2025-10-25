@@ -31,7 +31,7 @@ function statusColors(status: string, bg: boolean): string {
 
       <!-- Details pop out on the right -->
       {#if $data.activities[0] && $data.activities[0].details}
-        <div class="ml-4 pl-6 pr-3 border-l border-white border-opacity-20 max-w-xs">
+        <div class="pl-2 pr-3 border-opacity-20 max-w-xs">
           <p class="text-[10px] sm:text-sm text-neutral-200 truncate">
             {$data.activities[0].details}
           </p>
