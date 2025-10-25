@@ -40,20 +40,21 @@
 		"key": "nix"
 	},
 	{
-		"name": "NixOps",
-		"url": "https://nixos.org/nixops",
-		"key": "ops"
+		"name": "Colmena",
+		"url": "https://colmena.cli.rs/unstable/",
+		"key": "ca",
+		"other": true
+	},
+	{
+		"name": "Deploy-rs",
+		"url": "https://github.com/serokell/deploy-rs#api",
+		"key": "drs",
+		"other": true
 	},
 	{
 		"name": "Stylix (System-wide Theme)",
 		"url": "https://github.com/nix-community/stylix",
 		"key": "sx",
-		"other": true
-	},
-	{
-		"name": "Full Time Nix Podcast",
-		"url": "https://fulltimenix.com/",
-		"key": "ftn",
 		"other": true
 	},
 	{
@@ -84,6 +85,18 @@
 		"name": "nh (Nicer Builds & Features)",
 		"url": "https://github.com/nix-community/nh",
 		"key": "nh",
+		"other": true
+	},
+	{
+		"name": "Full Time Nix Podcast",
+		"url": "https://fulltimenix.com/",
+		"key": "ftn",
+		"other": true
+	},
+	{
+		"name": "Low-maintaince NixOps <don't use for new projects>",
+		"url": "https://nixos.org/nixops",
+		"key": "ops",
 		"other": true
 	}
 ]
