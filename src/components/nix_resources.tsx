@@ -28,7 +28,7 @@ export default function NixResources({ resources }: Props) {
 
 			const str = buffer.join('');
 			if (keyMap[str]) {
-				window.location.href = keyMap[str];
+				window.open(keyMap[str], '_blank', 'noopener,noreferrer');
 			}
 		};
 
@@ -45,7 +45,7 @@ export default function NixResources({ resources }: Props) {
 			<ul>
 				{coreResources.map(r => (
 					<li key={r.id}>
-						<a className="text-blue-200 hover:text-blue-600" href={r.url}>
+						<a className="text-blue-200 hover:text-blue-600" target="_blank" href={r.url}>
 							{r.name}
 						</a>
 						<span className="text-neutral-300"> ({r.key})</span>
@@ -57,7 +57,7 @@ export default function NixResources({ resources }: Props) {
 			<ul>
 				{otherResources.map(r => (
 					<li key={r.id}>
-						<a className="text-blue-200 hover:text-blue-600" href={r.url}>
+						<a className="text-blue-200 hover:text-blue-600" target="_blank" href={r.url}>
 							{r.name}
 						</a>
 						<span className="text-neutral-300"> ({r.key})</span>
